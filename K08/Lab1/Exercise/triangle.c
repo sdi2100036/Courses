@@ -3,13 +3,13 @@
 
 
 typedef struct point {
-    // CHANGE
+        int x,y// CHANGE
 } Point;
 
 struct triangle_static {
     Point points[3];
 };
-typedef ... Triangle; // CHANGE
+typedef  Triangle; // CHANGE
 
 void point_print(Point p) 
 {
@@ -24,14 +24,14 @@ void point_move_horizontally(Point p, int units)
 
 void triangle_print(Triangle* t) 
 {
-    for (int i = 0; ... ; i++) { // CHANGE 
+    for (int i = 0; i<= ; i++) { // CHANGE 
         point_print(t->points[i]);
     }
 }
 
 void triangle_move_horizontally(Triangle* t, int units) 
 {
-    for (int i = 0; ... ; i++) { // CHANGE 
+    for (int i = 0; i<=t->y ; i++) { // CHANGE 
         t->points[i].x += units;
     }
 }
